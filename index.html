@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>BIRLA INSTITUTE OF TECHNOLOGY</title>
+        <!--Favicon (Logo in Tab Bar)-->
+        <link rel="icon" type="image/x-icon" href="https://erp.bitmesra.ac.in/IMAGES/img/Birla_Institute_of_Technology_Mesra.png">
+        <!--Eye Icon to view password-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <!--Importing Captcha Css-->
+        <link rel="stylesheet" href="/css/captcha.css">
+        <!--Importing Body Css-->
+        <link rel="stylesheet" href="/css/body.css">
+        <!--Importing Login Form Css-->
+        <link rel="stylesheet" href="css/login_form.css">
+    </head>
+    <body>
+        <!--Left Div for left part dispaly-->
+        <div class = "left_div">
+            <!--Logo-->
+            <img src="https://erp.bitmesra.ac.in/IMAGES/img/Birla_Institute_of_Technology_Mesra.png" class = "logo">
+            <!--Heading 2 & 4-->
+            <h2>Birla Institute of Technology</h2>
+            <h4>Mesra, Ranchi - India</h4>
+            <!--Login Form-->
+            <form>
+                <!--Input Username-->
+                <input type="text" id="txt_username" placeholder="Username" class="uid">
+                <!--Input Password-->
+                <center><input type="password" id="id_password" placeholder="Password" class="password">
+                <!--View Password-->
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i></center>
+                <!--Captcha-->
+                <div class="contain">
+                    <!--Inupt Visible Captch-->
+                    <input type="text" id="textInput" placeholder="Enter Captcha">
+                    <!--Load Captch-->
+                    <input type="text" id="capt" readonly="readonly">    
+                    <!--Refresh-->
+                    <div id="refresh"><img src="https://erp.bitmesra.ac.in/IMAGES/refresh.gif" width="25px" height="25px" onclick="cap()"></div>
+                </div>
+                <input type="button" class="loginbtn" onclick="validate()" placeholder="Login"></input>
+                <button class="forgotbtn">Forgot Password</button>
+            </form>     
+        </div>
+        <!--Right div for right part display-->
+        <div class = "right_div">
+            <!--Red layer on Right Div-->
+            <div class = "right_div_top"></div>
+        </div>
+    </body>
+    <!--Importing View Pass Javascript-->
+    <script src="js/view_pass.js"></script>
+    <!--Importing Captcha Javascript-->
+    <script src="js/captcha.js"></script>
+    <!--Importing Verification Javascript-->
+    <script src="js/verification.js"></script> 
+</html>
